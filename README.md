@@ -50,18 +50,7 @@
 >        │   ├── errors.py                        - 422 에러, 나머지 전체 에러 처리
 >        │   │ 
 >        │   ├── api/                  
->        │   │   ├── urls.py                      - 라우터 등록하는 파일         
->        │   │   │            
->        │   │   ├── auth/                                
->        │   │   │   ├── __init__.py              
->        │   │   │   ├── auth_v1.py               - 라우팅(엔드 포인트)
->        │   │   │   └── services.py              - auth 관련 함수들(handler 역할)    
->        │   │   │
->        │   │   └── user/                                 
->        │   │       ├── __init__.py              
->        │   │       ├── user_v1.py               - 라우팅(엔드 포인트)           
->        │   │       └── services.py              - user 관련 함수들(handler 역할)   
->        │   │ 
+>        │   │   ├── urls.py                      - 라우터 등록하는 파일
 >        │   ├── common_utils/         
 >        │   │   ├── api_history/                 - api_history 관련 공통 모듈 폴더         
 >        │   │   │   └── api_history_doc.py       - api_history_doc 관련 함수 모아놓는 파일    
@@ -75,31 +64,17 @@
 >        │   ├── crud/         
 >        │   │   ├── mongodb/                     - 몽고디비 crud 파일 및 폴더
 >        │   │   │   ├── meta/                    - meta 데이터베이스 폴더
->        │   │   │   │   ├── authority.py         - authority 컬렉션 파일
->        │   │   │   │   ├── menu_info.py         - menu_info 컬렉션 파일
->        │   │   │   │   ├── system_codes.py      - system_codes 컬렉션 파일
->        │   │   │   │   ├── test.py              - test 컬렉션 파일
->        │   │   │   │   ├── user_push_token.py   - user_push_token 컬렉션 파일
->        │   │   │   │   └── users.py             - users 컬렉션 파일
 >        │   │   │   │
 >        │   │   │   └── session/                 - session 데이터베이스 폴더  
 >        │   │   │       └── session.py           - session 컬렉션 파일      
->        │   │   │   
->        │   │   └── mysql/                       - mysql crud 폴더 및 파일들 (예시)
->        │   │       ├── bms/                
->        │   │       │   └── bms_log.py      
->        │   │       └── pms/                 
->        │   │           └── pms_log.py     
->        │   │      
+>        │   │   │
 >        │   ├── database/         
 >        │   │   ├── __init__.py       
 >        │   │   ├── base.py                      - db 공통 동작들 모아놓는 파일
 >        │   │   ├── mariadb.py                   - mariadb 관련 함수들 모아놓는 파일 (예시)
 >        │   │   └── mongodb.py                   - mongodb 연결 관련 함수들(host, client)
 >        │   │ 
->        │   ├── models/         
->        │   │   ├── auth_model.py                - auth와 관련된 pydantic 모델
->        │   │   └── user_model.py                - user와 관련된 pydantic 모델
+>        │   ├── models/
 >        │   │ 
 >        │   └── tests/                 
 >        │       ├── test_mongodb.py              - mongodb.py에 대한 테스트 파일(미완성)
