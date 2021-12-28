@@ -1,0 +1,16 @@
+bcrypt==3.2.0
+fastapi==0.65.1
+motor==2.4.0
+pydantic==1.8.2
+uvicorn==0.14.0
+starlette==0.14.2
+PyJWT==1.7.1
+gunicorn
+fastapi-utils
+python-dotenv
+boto3
+pytz
+paramiko
+requests
+openpyxl
+aiofiles
